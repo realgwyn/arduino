@@ -38,21 +38,21 @@ void loop() {
   printString(MSG_TEMP2);
  
   lcd.setCursor(0, 1);
-  if(temperature<10){
+  if(temperature<12){
     print16("KURWA ALE ZIMNO!");
-  } else if(temperature<12){
+  } else if(temperature<14){
     print16("Napierdala zlem!");
-  } else if(temperature<15){
+  } else if(temperature<16){
     print16("Ale pizga!      ");
   } else if(temperature<18){
      print16("Zimno mi...     ");
-  } else if(temperature<20){
+  } else if(temperature<19){
     print16("Troche chlodno  ");
-  } else if(temperature<24){
+  } else if(temperature<23){
     print16("Jest idealnie =)");
-  } else if(temperature<27){
+  } else if(temperature<26){
     print16("Ale cieplutko   ");
-  } else if(temperature<29){
+  } else if(temperature<28){
     print16("Ale grzeje!     ");
   } else {
     print16("KURWA JAKI UPAL!");
